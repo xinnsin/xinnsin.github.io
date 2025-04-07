@@ -1,27 +1,24 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 黄玄的博客 | Hux Blog
+title: shixin
+SEOTitle: shixin的博客 | Xinshix Blog
 header-img: img/home-bg.jpg
-email: huxpro@gmail.com
-description: "这里是 @Hux黄玄 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
-keyword: "黄玄, Hux黄玄, Hux, 鬼栈, huxpro, @huxpro, 黄玄的博客, Hux Blog, 博客, 个人网站, 互联网, Web, JavaScript, React, React Native, 前端, 设计"
-url: "https://huangxuan.me" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+email: 1264110731@qq.com
+description: "这里是 xinshix 的个人博客，与你一起发现更大的世界 | 要做一个有 swag 的程序员"
+keyword: "shixin, xinshix, 博客, 个人网站, 通信工程, 嵌入式, 大数据, 人工智能, C++, STM32"
+url: "https://xinshix09.dpdns.org" # 你的域名
+baseurl: "" # 如果是子路径部署就写，比如 '/blog'
 
-# Publish posts or collection documents with a future date.
 future: true
 
-# SNS settings
-RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+# SNS settings（如有账号可以填）
+weibo_username: 
+zhihu_username: 
+github_username: xinshix09
+twitter_username: 
+# facebook_username: 
+# linkedin_username: 
 
 # Build settings
-# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
 highlighter: rouge
 permalink: pretty
 paginate: 10
@@ -34,23 +31,16 @@ exclude:
     "README.md",
     "README.zh.md",
   ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
-# If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
+anchorjs: true
+# timezone: CN
 
-# Gems
-# from PR#40, to support local preview for Jekyll 3.0
-# make sure you have this gem installed
-# `$ gem install jekyll-paginate`
+# Plugins
 plugins: [jekyll-paginate]
 
 # Markdown settings
-# replace redcarpet to kramdown,
-# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
-# document: http://jekyllrb.com/docs/configuration/#kramdown
 markdown: kramdown
 kramdown:
-  input: GFM # use Github Flavored Markdown !important
+  input: GFM
   syntax_highlighter_opts:
     span:
       line_numbers: false
@@ -58,45 +48,35 @@ kramdown:
       line_numbers: true
       start_line: 1
 
-# Disqus settings
-disqus_username: hux
+# 评论设置（Disqus可选）
+disqus_username: 
 
-# Netease settings
+# 网易云跟帖（一般不再使用）
 netease_comment: false
 
-# Analytics settings
-# Baidu Analytics
-# ba_track_id: [your track id]
-
-# Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+# Google Analytics（如不使用可删除）
+ga_track_id: ""
+ga_domain: xinshix09.dpdns.org
 
 # Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true
+sidebar-about-description: "通信工程 / 嵌入式开发 / 大数据分析 / 要做一个有 swag 的程序员"
+sidebar-avatar: https://avatars.githubusercontent.com/u/your_github_id.png # 建议上传头像或使用 GitHub 头像
 
-# Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+# 标签
+featured-tags: true
+featured-condition-size: 1
 
-# Progressive Web Apps
+# PWA
 chrome-tab-theme-color: "#000000"
 service-worker: true
 
-# MathJax rendering for layout:page (e.g. post preview)
+# MathJax（数学公式支持）
 page-mathjax: false
 
-# Friends
+# 友链（可选）
 friends:
   [
-    { title: "乱序（Midare）", href: "http://mida.re/" },
-    { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
-    { title: "Kun Qian", href: "http://kunq.me" },
-    { title: "Sherry Woo", href: "https://sherrywoo.me/" },
-    { title: "SmdCn", href: "http://blog.smdcn.net" },
-    { title: "JiyinYiyong", href: "http://tiye.me/" },
-    { title: "DHong Say", href: "http://dhong.co" },
-    { title: "尹峰以为", href: "http://ingf.github.io/" },
+    { title: "安徽工程大学", href: "https://www.ahpu.edu.cn/" },
+    { title: "皖江工学院", href: "https://www.wjut.edu.cn/" }
   ]
